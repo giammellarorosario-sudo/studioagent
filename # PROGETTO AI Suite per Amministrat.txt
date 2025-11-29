@@ -1,0 +1,794 @@
+# PROGETTO: AI Suite per Amministratori di Condominio — Italia
+
+## CONTESTO STRATEGICO
+
+Stai costruendo una startup B2B SaaS per il mercato italiano degli amministratori di condominio (35.000 studi, €300M+ TAM potenziale).
+
+Il problema core: l'amministratore medio perde 5+ ore/giorno rispondendo alle stesse domande dei condòmini. Zero innovazione nel settore — i software attuali (Danea, Sistemi, Buffetti) sono gestionali anni '90, non assistenti intelligenti.
+
+La soluzione: piattaforma AI che gestisce comunicazione condòmini (email + WhatsApp), fornisce knowledge base interna per operatori studio, e automatizza risposte su normativa + regolamenti condominiali.
+
+Tu sei un technical founder con mentalità 0.001% elite. Ogni decisione deve essere: validabile, scalabile, difendibile.
+
+---
+
+## ISTRUZIONI GENERALI
+
+1. **NON INVENTARE MAI** — Se non hai informazioni sufficienti, chiedi. Se devi fare assunzioni, esplicitale e chiedi conferma prima di procedere.
+
+2. **PROCEDI STEP BY STEP** — Completa ogni fase, mostrami l'output, attendi mia approvazione prima di passare alla successiva.
+
+3. **DOCUMENTA TUTTO** — Ogni file creato deve avere header con: data creazione, versione, dipendenze, istruzioni uso.
+
+4. **STRUTTURA REPOSITORY** — Mantieni organizzazione pulita. Ogni fase ha sua cartella.
+
+5. **CHIEDI PRIMA DI ASSUMERE** — Se una decisione richiede input business (es. pricing esatto, target geografico iniziale), fermati e chiedi.
+
+---
+
+## STRUTTURA PROGETTO
+```
+/condominio-ai-suite
+│
+├── /01-strategy
+│   ├── /brand
+│   │   ├── names-analysis.md
+│   │   ├── logos/ (5 varianti)
+│   │   └── brand-guidelines.md
+│   ├── /business
+│   │   ├── business-plan.md
+│   │   ├── financial-model.xlsx (o .md con tabelle)
+│   │   ├── pricing-strategy.md
+│   │   └── target-analysis.md
+│   ├── /gtm
+│   │   ├── go-to-market-plan.md
+│   │   ├── channel-strategy.md
+│   │   └── timeline-milestones.md
+│   └── /pitch
+│       ├── pitch-deck.md (struttura)
+│       └── pitch-deck-content/ (slide per slide)
+│
+├── /02-product
+│   ├── /specs
+│   │   ├── PRD.md (Product Requirements Document)
+│   │   ├── user-stories.md
+│   │   ├── information-architecture.md
+│   │   └── api-design.md
+│   ├── /ux
+│   │   ├── user-flows.md
+│   │   └── wireframes/ (descrizioni dettagliate)
+│   └── /technical
+│       ├── tech-stack-decision.md
+│       ├── architecture-diagram.md
+│       └── database-schema.md
+│
+├── /03-mvp
+│   ├── /backend
+│   ├── /frontend
+│   ├── /integrations
+│   │   ├── whatsapp/
+│   │   ├── email/
+│   │   └── ai-engine/
+│   └── /knowledge-base
+│       ├── normativa-condominiale/
+│       └── templates-regolamento/
+│
+├── /04-assets
+│   ├── /logos
+│   ├── /presentations
+│   └── /marketing
+│
+└── README.md
+```
+
+---
+
+## FASE 1: BRAND IDENTITY & NAMING
+
+### Obiettivo
+Creare 5 proposte di naming + logo che funzionino per il mercato italiano degli amministratori di condominio. Il target sono professionisti 40-60 anni, mediamente conservatori, ma aperti a soluzioni che fanno risparmiare tempo.
+
+### Task 1.1: Analisi Naming
+
+Crea file `/01-strategy/brand/names-analysis.md` con:
+
+Per ogni nome (5 totali), analizza:
+
+1. **Nome proposto** (possono essere italiani o inglesi, purché pronunciabili da italiano medio)
+2. **Razionale strategico** — perché funziona per questo target
+3. **Disponibilità dominio** — verifica .it e .com (indica come verificare)
+4. **Connotazioni** — cosa evoca, rischi di fraintendimento
+5. **Scalabilità** — funziona se espandiamo ad altri verticali?
+6. **Memorabilità** — test: lo ricordi dopo 5 minuti?
+
+Criteri per i nomi:
+- Devono comunicare: affidabilità, modernità, semplicità
+- Evitare: troppo tech/startup-y (spaventa il target), giochi di parole forzati
+- Bonus: se contiene riferimento a "condominio" o "amministrazione" senza essere banale
+
+**OUTPUT ATTESO:** Tabella comparativa 5 nomi + raccomandazione finale con motivazione.
+
+**FERMATI QUI — Attendi mia approvazione prima di procedere ai loghi.**
+
+---
+
+### Task 1.2: Logo Design
+
+Dopo approvazione nomi, crea 5 varianti logo per il nome scelto.
+
+Per ogni logo, salva in `/04-assets/logos/` e documenta in `/01-strategy/brand/brand-guidelines.md`:
+
+1. **Concept** — idea dietro il design
+2. **Varianti** — versione colore, B/N, favicon, icona app
+3. **Palette colori** — hex codes, razionale psicologico
+4. **Typography** — font primario e secondario, razionale
+5. **Utilizzo** — do's and don'ts
+
+Criteri design:
+- Professionale ma non corporate freddo
+- Deve funzionare su WhatsApp profile picture (piccolo)
+- Deve funzionare su carta intestata (grande)
+- Evitare: palazzi/edifici stilizzati (troppo ovvio), colori troppo vivaci
+
+Per creare i loghi usa:
+- SVG code per versioni vettoriali semplici
+- Descrizione dettagliata per generazione con tool esterni se necessario
+
+**OUTPUT ATTESO:** 5 file logo + brand guidelines complete.
+
+**FERMATI QUI — Attendi mia approvazione prima di procedere.**
+
+---
+
+## FASE 2: STRATEGIA BUSINESS
+
+### Task 2.1: Target Analysis
+
+Crea file `/01-strategy/business/target-analysis.md` con:
+
+#### 2.1.1 Segmentazione Mercato
+```
+MERCATO TOTALE AMMINISTRATORI ITALIA
+├── Per dimensione studio
+│   ├── Micro (1 persona, <20 condomìni)
+│   ├── Piccolo (2-4 persone, 20-80 condomìni)
+│   ├── Medio (5-10 persone, 80-200 condomìni)
+│   └── Grande (>10 persone, >200 condomìni)
+│
+├── Per geografia
+│   ├── Nord (caratteristiche specifiche)
+│   ├── Centro (caratteristiche specifiche)
+│   └── Sud (caratteristiche specifiche)
+│
+├── Per digitalizzazione attuale
+│   ├── Low-tech (Excel + carta)
+│   ├── Mid-tech (gestionale base)
+│   └── High-tech (gestionale avanzato + portale condòmini)
+│
+└── Per tipologia condomìni gestiti
+    ├── Residenziale standard
+    ├── Residenziale lusso
+    ├── Misto residenziale/commerciale
+    └── Supercondomìni
+```
+
+Per ogni segmento documenta:
+- Dimensione stimata (numero studi, numero unità gestite)
+- Pain points specifici
+- Willingness to pay
+- Canali di acquisizione
+- Obiezioni tipiche all'acquisto
+
+#### 2.1.2 Buyer Persona
+
+Crea 3 persona dettagliate:
+
+**Persona 1: Target Primario**
+- Nome fittizio, età, città
+- Background professionale
+- Giornata tipo (hour by hour)
+- Frustrazioni principali (top 5 ranked)
+- Obiettivi (cosa lo farebbe sentire "ho vinto")
+- Obiezioni all'acquisto (e come superarle)
+- Dove si informa (canali, associazioni, eventi)
+- Quote verbatim realistiche
+
+**Persona 2: Target Secondario**
+(stesso schema)
+
+**Persona 3: Anti-Persona** (chi NON vogliamo come cliente)
+(stesso schema + perché evitarlo)
+
+#### 2.1.3 Competitive Landscape
+
+Mappa i competitor in:
+- Gestionali condominio esistenti (Danea, Sistemi, Buffetti, Arcadia, etc.)
+- Soluzioni comunicazione generiche (WhatsApp Business, email marketing tools)
+- Potenziali entranti (chi potrebbe costruire questo domani)
+
+Per ogni competitor:
+- Cosa fanno bene
+- Cosa fanno male
+- Pricing
+- Gap che possiamo sfruttare
+
+**OUTPUT ATTESO:** Documento completo 15-20 pagine con dati concreti (anche stimati, ma con logica esplicita).
+
+**FERMATI QUI — Attendi feedback prima di procedere.**
+
+---
+
+### Task 2.2: Business Plan
+
+Crea file `/01-strategy/business/business-plan.md` con:
+
+#### Executive Summary (1 pagina)
+- Problema
+- Soluzione
+- Mercato
+- Modello business
+- Traction target 18 mesi
+- Team (placeholder)
+- Ask (se fundraising)
+
+#### Problema (2 pagine)
+- Quantificazione del dolore (ore perse, costi opportunità)
+- Citazioni realistiche da amministratori
+- Perché le soluzioni attuali non funzionano
+- Perché ora (trend convergenti)
+
+#### Soluzione (3 pagine)
+- Overview prodotto
+- Feature principali con priorità (P0, P1, P2)
+- Differenziazione chiave
+- Roadmap 24 mesi
+
+#### Modello di Business (2 pagine)
+- Revenue streams
+- Pricing tiers (dettaglio nel file dedicato)
+- Unit economics target
+- Path to profitability
+
+#### Go-to-Market (sintesi, dettaglio in file dedicato)
+
+#### Financials (3 pagine)
+- Assumptions esplicite
+- P&L proiezione 3 anni
+- Cash flow
+- Metriche chiave (CAC, LTV, Payback, Churn)
+- Scenario base, ottimista, pessimista
+
+#### Team & Execution (1 pagina)
+- Competenze necessarie
+- Primi 3 hire
+- Advisory board ideale
+
+#### Rischi & Mitigazioni (1 pagina)
+- Top 5 rischi
+- Strategia mitigazione per ciascuno
+
+**OUTPUT ATTESO:** Business plan completo, pronto per investor o accelerator.
+
+**FERMATI QUI — Attendi feedback prima di procedere.**
+
+---
+
+### Task 2.3: Pricing Strategy
+
+Crea file `/01-strategy/business/pricing-strategy.md` con:
+
+#### Framework Decisionale
+
+Analizza 3 modelli:
+
+**Modello A: Per Unità Gestita**
+- €X per unità immobiliare/mese
+- Pro e contro
+- Simulazione revenue per segmento cliente
+
+**Modello B: Tier Flat**
+- €X/mese Small, €Y/mese Medium, €Z/mese Large
+- Criteri di tier (unità? feature? utenti?)
+- Pro e contro
+
+**Modello C: Usage-Based**
+- €X per messaggio/conversazione gestita
+- Pro e contro
+- Rischio e mitigazione
+
+#### Raccomandazione
+
+Scegli modello con razionale dettagliato.
+
+Definisci:
+- Prezzo entry point (deve essere "no brainer")
+- Prezzo tier principale (dove vuoi la maggior parte clienti)
+- Prezzo enterprise (per grandi studi)
+- Strategia free trial / freemium
+- Sconti (annuale vs mensile, referral)
+
+#### Competitive Positioning
+
+Tabella comparativa pricing vs:
+- Gestionali esistenti
+- Tool comunicazione generici
+- Valore percepito (ore risparmiate × costo orario)
+
+**OUTPUT ATTESO:** Pricing definito con tutte le varianti e razionale.
+
+**FERMATI QUI — Attendi approvazione pricing prima di procedere.**
+
+---
+
+### Task 2.4: Go-to-Market Plan
+
+Crea file `/01-strategy/gtm/go-to-market-plan.md` con:
+
+#### Strategia Overall
+
+Principio: **Monopolio Geografico poi Espansione**
+
+Non lanciare in tutta Italia. Domina una provincia, poi replica.
+
+#### Fase 0: Pre-Launch (Mese 1-2)
+
+**Obiettivo:** 10 beta tester paganti
+
+Attività:
+- [ ] Identificare provincia target (criteri: densità amministratori, network personale, dimensione mercato)
+- [ ] Mappare tutti gli studi nella provincia (fonte: albo, Google Maps, LinkedIn)
+- [ ] Identificare 3-5 "champion" potenziali (amministratori influenti, presidenti associazione locale)
+- [ ] Outreach personale (no ads, no automation)
+- [ ] Offrire beta gratuita 3 mesi in cambio di feedback strutturato
+
+**Metriche:**
+- 50 contatti
+- 15 demo
+- 10 beta signup
+
+#### Fase 1: Validation (Mese 3-4)
+
+**Obiettivo:** Product-Market Fit segnali
+
+Attività:
+- [ ] Onboarding beta tester con white-glove service
+- [ ] Weekly check-in per feedback
+- [ ] Iterazione rapida su top 3 pain points
+- [ ] Raccolta testimonianze video
+- [ ] Definizione pricing basato su willingness-to-pay reale
+
+**Metriche:**
+- NPS > 40
+- 7/10 beta tester convertono a pagamento
+- 3 referral organici
+
+#### Fase 2: Local Dominance (Mese 5-8)
+
+**Obiettivo:** 50 clienti paganti nella provincia
+
+Canali:
+1. **Referral program** — €100 per referral convertito
+2. **Partnership Ordine locale** — webinar gratuito su "Digitalizzazione studio"
+3. **Content locale** — articoli su normativa regionale, casi studio locali
+4. **Presenza fisica** — eventi associazione, caffè con amministratori
+
+**Metriche:**
+- 50 clienti paganti
+- €5-8k MRR
+- CAC < €150
+- Churn < 5%/mese
+
+#### Fase 3: Expansion Playbook (Mese 9-12)
+
+**Obiettivo:** Replicare in 2-3 province adiacenti
+
+Attività:
+- [ ] Documentare playbook Fase 1-2
+- [ ] Assumere 1 Business Developer per nuova provincia
+- [ ] Adattare content per specificità locali
+- [ ] Mantenere HQ operations centralizzate
+
+**Metriche:**
+- 150 clienti totali
+- €20k MRR
+- Break-even operativo
+
+#### Fase 4: Scale (Mese 13-18)
+
+**Obiettivo:** Presenza nazionale, Serie A ready
+
+Canali aggiuntivi:
+- Partnership nazionali (ANACI, software gestionali per integrazione)
+- Content marketing scalabile
+- Ads (solo ora, con unit economics provati)
+
+**Metriche:**
+- 500 clienti
+- €60-80k MRR
+- Path to €1M ARR chiaro
+
+---
+
+Crea anche `/01-strategy/gtm/channel-strategy.md` con dettaglio per ogni canale:
+- Descrizione canale
+- Effort richiesto (tempo, soldi, competenze)
+- Expected CAC
+- Timeline to results
+- Scalabilità
+- Priorità (Now, Next, Later)
+
+E `/01-strategy/gtm/timeline-milestones.md` con:
+- Gantt chart testuale mese per mese
+- Milestones chiave
+- Decision points (go/no-go)
+- Dependencies
+
+**OUTPUT ATTESO:** GTM plan completo e actionable.
+
+**FERMATI QUI — Attendi feedback prima di procedere.**
+
+---
+
+## FASE 3: PITCH DECK
+
+### Task 3.1: Pitch Deck Structure
+
+Crea `/01-strategy/pitch/pitch-deck.md` con struttura 12 slide:
+
+Per ogni slide:
+- Titolo
+- Key message (1 frase)
+- Contenuto dettagliato
+- Visual suggestion
+- Speaker notes (cosa dire presentando)
+- Timing (secondi)
+
+**Slide 1: Cover**
+- Nome + tagline
+- Visual: logo su sfondo pulito
+
+**Slide 2: Il Problema**
+- Quantificazione dolore
+- Visual: citazione reale amministratore + numero shock
+
+**Slide 3: La Dimensione del Problema**
+- Mercato, ore perse, costi
+- Visual: infografica semplice
+
+**Slide 4: Perché Ora**
+- Trend convergenti (AI, WhatsApp Business API, post-Covid digital adoption)
+- Visual: timeline o grafico trend
+
+**Slide 5: La Soluzione**
+- Overview prodotto in 1 frase
+- Visual: screenshot/mockup hero
+
+**Slide 6: Come Funziona**
+- 3 step semplici
+- Visual: flow diagram
+
+**Slide 7: Demo / Product**
+- Screenshot chiave o video embed reference
+- Visual: product in action
+
+**Slide 8: Traction**
+- Numeri attuali (anche se beta)
+- Visual: grafico crescita + loghi clienti
+
+**Slide 9: Business Model**
+- Pricing, unit economics
+- Visual: tabella semplice
+
+**Slide 10: Mercato**
+- TAM, SAM, SOM con logica
+- Visual: cerchi concentrici o barre
+
+**Slide 11: Team**
+- Founder + key hire + advisor
+- Visual: foto + 1 riga credenziale
+
+**Slide 12: Ask & Use of Funds**
+- Quanto raccogli, per cosa
+- Visual: pie chart o timeline milestones
+
+Crea anche cartella `/01-strategy/pitch/pitch-deck-content/` con file separato per ogni slide contenente:
+- Testo completo
+- Dati/fonti
+- Alternative considerate
+
+**OUTPUT ATTESO:** Pitch deck strutturato, pronto per design.
+
+**FERMATI QUI — Attendi feedback prima di procedere.**
+
+---
+
+## FASE 4: PRODUCT SPECIFICATION
+
+### Task 4.1: Product Requirements Document (PRD)
+
+Crea `/02-product/specs/PRD.md` con:
+
+#### Overview Prodotto
+
+**Vision:** [1 frase che descrive il mondo dopo che esistiamo]
+
+**Mission:** [come ci arriviamo]
+
+**Principi Guida:**
+1. Semplicità > Feature
+2. Integrazione > Sostituzione
+3. Valore immediato > Promesse future
+
+#### Utenti e Ruoli
+
+| Ruolo | Descrizione | Permessi |
+|-------|-------------|----------|
+| Admin Studio | Titolare/responsabile | Full access |
+| Operatore | Segretaria/collaboratore | Gestione comunicazioni, no billing |
+| Condòmino | Utente finale | Solo proprio condominio, chat, documenti |
+
+#### Feature Set MVP (P0)
+
+**F1: Dashboard Principale**
+- Obiettivo: Vista unificata attività pending
+- User story: "Come operatore, voglio vedere tutti i messaggi non gestiti in un posto"
+- Requisiti funzionali:
+  - Lista messaggi WhatsApp in arrivo
+  - Lista email in arrivo
+  - Filtri per condominio, urgenza, stato
+  - Azioni rapide (rispondi, assegna, chiudi)
+- Requisiti non funzionali:
+  - Caricamento < 2 sec
+  - Mobile responsive
+
+**F2: WhatsApp Integration**
+- Obiettivo: Gestire WhatsApp Business da dashboard
+- User story: "Come operatore, voglio rispondere a WhatsApp senza usare il telefono"
+- Requisiti funzionali:
+  - Ricezione messaggi in real-time
+  - Invio messaggi (testo, immagini, documenti)
+  - Template messaggi pre-approvati
+  - Auto-reply fuori orario
+  - Suggerimento risposta AI
+- Requisiti non funzionali:
+  - Latenza < 5 sec
+  - Compliance WhatsApp Business API ToS
+- Dipendenze: WhatsApp Business API account
+
+**F3: Email Integration**
+- Obiettivo: Centralizzare email condomìni
+- User story: "Come operatore, voglio vedere email e WhatsApp insieme"
+- Requisiti funzionali:
+  - Connessione IMAP/SMTP o Gmail/Outlook API
+  - Threading conversazioni
+  - Suggerimento risposta AI
+  - Template email
+- Requisiti non funzionali:
+  - Sync ogni 2 minuti max
+  - Supporto allegati fino 25MB
+
+**F4: AI Response Engine**
+- Obiettivo: Suggerire/generare risposte accurate
+- User story: "Come operatore, voglio che l'AI scriva la risposta e io approvo"
+- Requisiti funzionali:
+  - Analisi messaggio in arrivo
+  - Generazione risposta contestuale
+  - Fonti: normativa, regolamento condominio, storico comunicazioni
+  - Confidence score
+  - Edit before send
+  - Feedback loop (risposta usata/modificata/rifiutata)
+- Requisiti non funzionali:
+  - Response generation < 10 sec
+  - Accuracy > 85% (misurabile via feedback)
+
+**F5: Knowledge Base Interna**
+- Obiettivo: Chat per operatori su normativa e regolamenti
+- User story: "Come segretaria, voglio chiedere all'AI se posso rispondere X a un condòmino"
+- Requisiti funzionali:
+  - Chat interface interno (non visibile a condòmini)
+  - RAG su: Codice Civile artt. condominio, normativa regionale, regolamento specifico condominio caricato
+  - Citazione fonti nelle risposte
+  - Storico conversazioni
+- Requisiti non funzionali:
+  - Response < 15 sec
+  - Fonti sempre linkate
+
+**F6: Document Management Base**
+- Obiettivo: Caricare regolamenti per RAG
+- User story: "Come admin, voglio caricare il regolamento del condominio X così l'AI lo conosce"
+- Requisiti funzionali:
+  - Upload PDF/Word
+  - OCR se necessario
+  - Associazione documento ↔ condominio
+  - Versioning base
+- Requisiti non funzionali:
+  - Upload max 50MB
+  - Processing < 5 min
+
+#### Feature Set Post-MVP (P1)
+
+- Automation rules (if X then Y)
+- Scheduling messaggi
+- Report analytics comunicazioni
+- Integrazione gestionale (read-only)
+- Multi-lingua (per condomìni con stranieri)
+- Mobile app nativa
+
+#### Feature Set Future (P2)
+
+- Gestione assemblee (convocazioni, deleghe, verbali)
+- Portale condòmino self-service
+- Integrazione pagamenti
+- Chiamate vocali con AI
+
+#### Requisiti Non Funzionali Globali
+
+| Categoria | Requisito |
+|-----------|-----------|
+| Performance | Page load < 3s, API response < 500ms |
+| Availability | 99.5% uptime |
+| Security | GDPR compliant, encryption at rest e in transit, 2FA |
+| Scalability | Support 100 studi concurrent in MVP |
+| Backup | Daily backup, 30 days retention |
+
+**OUTPUT ATTESO:** PRD completo e dettagliato.
+
+**FERMATI QUI — Attendi feedback prima di procedere.**
+
+---
+
+### Task 4.2: User Stories
+
+Crea `/02-product/specs/user-stories.md` con tutte le user stories in formato:
+```
+[ID] Come [RUOLO], voglio [AZIONE], così che [BENEFICIO]
+
+Criteri di accettazione:
+- [ ] Criterio 1
+- [ ] Criterio 2
+
+Priorità: P0/P1/P2
+Effort: S/M/L/XL
+Dipendenze: [altre stories]
+```
+
+Raggruppa per epic:
+- Onboarding
+- Dashboard
+- WhatsApp
+- Email
+- AI Engine
+- Knowledge Base
+- Settings
+
+**OUTPUT ATTESO:** 30-50 user stories complete.
+
+---
+
+### Task 4.3: Information Architecture
+
+Crea `/02-product/specs/information-architecture.md` con:
+
+- Sitemap completa
+- Navigation structure
+- URL schema
+- Permessi per pagina/sezione
+
+---
+
+### Task 4.4: Technical Specs
+
+Crea `/02-product/technical/tech-stack-decision.md` con:
+
+Analisi opzioni per:
+- Frontend (React, Vue, Svelte, etc.)
+- Backend (Node, Python, Go, etc.)
+- Database (Postgres, MongoDB, etc.)
+- AI/LLM (OpenAI, Claude, self-hosted)
+- Infra (AWS, GCP, Vercel, etc.)
+- WhatsApp API provider
+
+Per ogni scelta:
+- Opzioni considerate
+- Pro/contro
+- Decisione con razionale
+- Costi stimati
+
+Crea `/02-product/technical/architecture-diagram.md` con:
+- Diagramma componenti (ASCII o Mermaid)
+- Data flow
+- External integrations
+
+Crea `/02-product/technical/database-schema.md` con:
+- ERD
+- Tabelle principali
+- Indici
+- Relazioni
+
+**OUTPUT ATTESO:** Documentazione tecnica completa per iniziare sviluppo.
+
+**FERMATI QUI — Attendi approvazione tech stack prima di procedere al codice.**
+
+---
+
+## FASE 5: MVP DEVELOPMENT
+
+### Task 5.1: Project Setup
+```
+Crea struttura progetto in /03-mvp/ seguendo tech stack approvato.
+
+Setup:
+- [ ] Repository structure
+- [ ] Package management
+- [ ] Environment configuration
+- [ ] Basic CI/CD
+- [ ] README con istruzioni setup locale
+```
+
+### Task 5.2: Backend Core
+
+Implementa in ordine:
+1. Auth system (registration, login, JWT)
+2. Multi-tenant data model (studio → condomìni → unità)
+3. User roles & permissions
+4. Base API structure
+
+### Task 5.3: Integrations
+
+1. WhatsApp Business API integration
+2. Email integration (start with Gmail API)
+3. OpenAI/Claude integration per AI engine
+
+### Task 5.4: Knowledge Base
+
+1. Document upload & processing
+2. Vector store setup
+3. RAG pipeline
+4. Internal chat interface
+
+### Task 5.5: Frontend
+
+1. Auth flows
+2. Dashboard
+3. Messaging interface
+4. Knowledge base chat
+5. Settings
+
+### Task 5.6: AI Engine
+
+1. Message classification
+2. Response generation
+3. Source citation
+4. Feedback collection
+
+**Per ogni task di sviluppo:**
+- Scrivi codice pulito, commentato
+- Includi test base
+- Documenta API endpoints
+- Aggiorna README
+
+---
+
+## REGOLE FINALI
+
+1. **Ogni fase produce deliverable concreti** — file, codice, documenti. Mai solo testo in chat.
+
+2. **Chiedi conferma a ogni checkpoint** — Non procedere mai autonomamente alla fase successiva.
+
+3. **Se qualcosa non è chiaro, chiedi** — Meglio una domanda in più che un deliverable sbagliato.
+
+4. **Mantieni visione d'insieme** — Ogni decisione tattica deve servire la strategia.
+
+5. **Qualità > Velocità** — Meglio un MVP che funziona perfettamente per 3 feature che uno buggato con 10.
+
+---
+
+## INIZIA ORA
+
+Conferma di aver letto e compreso tutto il prompt.
+
+Poi inizia dalla **FASE 1, Task 1.1: Analisi Naming**.
+
+Producimi il file `/01-strategy/brand/names-analysis.md` con le 5 proposte di nome.
+
+Attendo tuo output.

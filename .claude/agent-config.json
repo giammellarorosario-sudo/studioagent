@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "project": "condoai",
+  "caching": {
+    "enabled": true,
+    "strategy": "git-based",
+    "ttl": 3600
+  },
+  "context": {
+    "include": [
+      "01-strategy/**/*.md",
+      "02-product/**/*.md",
+      "docs/**/*.md",
+      "README.md",
+      "# PROGETTO AI Suite per Amministrat.txt"
+    ],
+    "exclude": [
+      "node_modules/**",
+      ".venv/**",
+      "*.log",
+      "dist/**",
+      "build/**",
+      ".next/**"
+    ]
+  },
+  "tools": {
+    "enabled": [
+      "file-search",
+      "code-analysis",
+      "git-operations"
+    ]
+  }
+}
