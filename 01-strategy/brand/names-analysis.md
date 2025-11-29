@@ -1,7 +1,7 @@
 # Analisi Naming - CondoAI Suite
 
 **Data creazione:** 2025-11-29
-**Versione:** 1.0
+**Versione:** 2.0 - Espansa con 15 nomi aggiuntivi
 **Fase:** FASE 1 - Brand Identity & Naming
 
 ---
@@ -397,6 +397,371 @@
 **Logo Design per CondoAssist** - 5 varianti
 - Attendere tua approvazione esplicita prima di procedere
 - Logo dovrà riflettere: professionalità, accessibilità, modernità discreta
+
+---
+
+## ESPANSIONE: Altri 15 Nomi Candidati
+
+*Richiesta utente: ampliare la selezione con 15 proposte aggiuntive per maggiore scelta.*
+
+### 6. **CasaHub**
+
+#### Razionale Strategico
+- **"Casa" invece di "Condo":** Più caldo, familiare, meno tecnico
+- **"Hub" = centro nevralgico:** Tutto passa da qui (comunicazioni, documenti, gestione)
+- **Bilingue naturale:** "Casa" comprensibile in mercati latini, "Hub" universale
+- **Posizionamento:** La piattaforma centrale per la gestione condominiale
+
+#### Punti Chiave
+- **Target fit:** 🟢 Ottimo (8/10) - "Casa" risuona emotivamente
+- **Professionalità:** 🟡 Buona (7/10) - "Hub" tech ma non troppo
+- **Scalabilità:** 🟢 Alta - "Casa" applicabile a PropTech generale
+- **Memorabilità:** 🟢 Alta (8/10) - Semplice, 3 sillabe
+- **Dominio:** Probabile conflitto su .com (parola comune), .it più disponibile
+- **Score totale:** 7.6/10
+
+---
+
+### 7. **SindacoAI**
+
+#### Razionale Strategico
+- **"Sindaco" = figura autoritativa del condominio:** Riferimento diretto al ruolo legale
+- **AI esplicito:** Comunica immediatamente la natura tecnologica
+- **Autorevolezza:** Nome trasmette competenza normativa/legale
+- **Nicchia specifica:** Parla direttamente al pain point amministrativo
+
+#### Punti Chiave
+- **Target fit:** 🟢 Eccellente (9/10) - "Sindaco" termine tecnico noto
+- **Professionalità:** 🟢 Altissima (9/10)
+- **Scalabilità:** 🔴 Bassa - "Sindaco" locked su condomini italiani
+- **Memorabilità:** 🟡 Media (7/10) - Tecnico, richiede spiegazione
+- **Dominio:** Alta disponibilità (termine specifico)
+- **Score totale:** 7.3/10
+- **Nota:** Rischio suonare troppo "legalese" per segmento piccoli studi
+
+---
+
+### 8. **CondoWise**
+
+#### Razionale Strategico
+- **"Wise" = saggezza/intelligenza:** Posiziona come consulente esperto
+- **Anglicismo soft:** "Wise" pronunciabile e compreso da italiani
+- **Tono rassicurante:** Non "veloce" o "automatico", ma "saggio"
+- **Competitor differentiation:** Nessun player usa "Wise" in questo mercato
+
+#### Punti Chiave
+- **Target fit:** 🟢 Buono (8/10) - "Wise" accessibile anche per 50+
+- **Professionalità:** 🟢 Alta (8/10)
+- **Scalabilità:** 🟡 Media - "Condo" limita, "Wise" estendibile
+- **Memorabilità:** 🟢 Alta (8/10) - Suono piacevole
+- **Dominio:** Media disponibilità
+- **Score totale:** 7.8/10
+
+---
+
+### 9. **Habita**
+
+#### Razionale Strategico
+- **Latino "habitare" (abitare):** Radice culturale profonda
+- **Minimalista ed elegante:** 3 sillabe, suono sofisticato
+- **Abstract ma evocativo:** Non dice esplicitamente "condominio", ma lo suggerisce
+- **Brand premium:** Può posizionare verso segmento alto mercato
+
+#### Punti Chiave
+- **Target fit:** 🟡 Medio (6/10) - Forse troppo astratto per conservatori
+- **Professionalità:** 🟢 Altissima (9/10) - Suono corporate elegante
+- **Scalabilità:** 🟢 Altissima (9/10) - Applicabile a tutto PropTech/real estate
+- **Memorabilità:** 🟡 Media (6/10) - Richiede ripetizioni
+- **Dominio:** Rischio conflitti (parola breve)
+- **Score totale:** 6.9/10
+
+---
+
+### 10. **CondoMate**
+
+#### Razionale Strategico
+- **"Mate" = compagno, partner:** Tono friendly, collaborativo
+- **Anglicismo popolare:** "Mate" usato anche in italiano (es. "roommate")
+- **Positioning non-minaccioso:** Sei il partner, non il sostituto
+- **Youth appeal:** Più fresco di "Assist", può attrarre amministratori under 40
+
+#### Punti Chiave
+- **Target fit:** 🟡 Medio (7/10) - Forse troppo casual per 50+
+- **Professionalità:** 🟡 Media (6/10) - "Mate" informale
+- **Scalabilità:** 🟡 Media - "Mate" suffix applicabile (PropertyMate, OfficeMate)
+- **Memorabilità:** 🟢 Alta (8/10)
+- **Dominio:** Disponibilità media
+- **Score totale:** 6.8/10
+
+---
+
+### 11. **Palazzo** (o PalazzoAI)
+
+#### Razionale Strategico
+- **Iconico italiano:** "Palazzo" = edificio storico, eleganza, stabilità
+- **One-word brand:** Forte, memorabile, distintivo
+- **Storytelling:** "Gestiamo il tuo Palazzo (digitale)"
+- **Lusso accessibile:** Eleva percezione del servizio
+
+#### Punti Chiave
+- **Target fit:** 🟢 Buono (8/10) - Risonanza culturale forte
+- **Professionalità:** 🟢 Alta (8/10) - Prestigio implicito
+- **Scalabilità:** 🔴 Bassa (4/10) - Molto specifico a immobili italiani
+- **Memorabilità:** 🟢 Altissima (9/10) - Una parola, iconic
+- **Dominio:** Rischio altissimo conflitti (parola comune)
+- **Score totale:** 7.0/10
+
+---
+
+### 12. **Conduit** (pronuncia: Con-du-it)
+
+#### Razionale Strategico
+- **"Conduit" = condotto, canale:** Metafora per flusso comunicazioni
+- **Doppio significato:** "Con" + "duit" (suona come "do it")
+- **Tech-credible:** Termine IT (networking) ma non oscuro
+- **Positioning:** Il canale che connette amministratore ↔ condòmini
+
+#### Punti Chiave
+- **Target fit:** 🟡 Medio (6/10) - Pronuncia non ovvia per italiani
+- **Professionalità:** 🟢 Alta (8/10) - Suono corporate
+- **Scalabilità:** 🟢 Alta (8/10) - Metafora applicabile a qualsiasi workflow
+- **Memorabilità:** 🟡 Media (6/10) - Spelling complesso
+- **Dominio:** Media disponibilità (parola inglese specifica)
+- **Score totale:** 6.7/10
+
+---
+
+### 13. **Edifico**
+
+#### Razionale Strategico
+- **Latino "aedificare" (costruire):** Ma anche "edificio" in italiano
+- **Doppia lettura:** Costruiamo soluzioni + gestiamo edifici
+- **Suono forte:** Tre sillabe, chiusura in "o" (tipico brand IT)
+- **Memorabile:** Simile a "Edenred", "Credito", brand corporate noti
+
+#### Punti Chiave
+- **Target fit:** 🟢 Buono (7/10) - Suono professionale
+- **Professionalità:** 🟢 Alta (8/10)
+- **Scalabilità:** 🟡 Media (6/10) - "Edifico" legato a real estate
+- **Memorabilità:** 🟢 Alta (8/10)
+- **Dominio:** Alta disponibilità (neologismo)
+- **Score totale:** 7.2/10
+
+---
+
+### 14. **Quorum**
+
+#### Razionale Strategico
+- **Termine assemblee condominiali:** "Raggiunto il quorum" = decisione presa
+- **Significato profondo:** Consenso, partecipazione, democrazia condominiale
+- **One-word power:** Breve, latino, autorevole
+- **Positioning:** Facilitiamo il raggiungimento del quorum (decisioni veloci)
+
+#### Punti Chiave
+- **Target fit:** 🟢 Eccellente (9/10) - "Quorum" termine quotidiano per amministratori
+- **Professionalità:** 🟢 Altissima (9/10) - Autorevolezza legale
+- **Scalabilità:** 🟡 Media (7/10) - "Quorum" applicabile a governance/voting tool
+- **Memorabilità:** 🟢 Alta (8/10)
+- **Dominio:** Rischio conflitti (parola comune, possibili trademark)
+- **Score totale:** 8.0/10 ⭐
+
+---
+
+### 15. **AbitaIQ**
+
+#### Razionale Strategico
+- **"Abita" (abitare) + "IQ" (intelligenza):** Chiaro value prop
+- **Pattern riconoscibile:** Simile a "CreditIQ", "PropertyIQ" (naming SaaS B2B)
+- **Bilingual:** "Abita" IT, "IQ" universale
+- **Smart positioning:** Non solo AI, ma intelligenza applicata all'abitare
+
+#### Punti Chiave
+- **Target fit:** 🟡 Medio (7/10) - "IQ" forse troppo tech
+- **Professionalità:** 🟢 Alta (8/10)
+- **Scalabilità:** 🟢 Alta (8/10) - "IQ" suffix scalabile
+- **Memorabilità:** 🟢 Alta (8/10)
+- **Dominio:** Buona disponibilità
+- **Score totale:** 7.5/10
+
+---
+
+### 16. **Condeco**
+
+#### Razionale Strategico
+- **"Condo" + "Eco" (ecosistema):** Piattaforma completa
+- **Suono corporate europeo:** Ricorda "Sodexo", "Adecco" (brand affermati)
+- **Conciso:** 3 sillabe, facile da pronunciare
+- **Positioning:** L'ecosistema digitale per amministratori
+
+#### Punti Chiave
+- **Target fit:** 🟢 Buono (7/10)
+- **Professionalità:** 🟢 Alta (8/10) - Suono solido
+- **Scalabilità:** 🟡 Media (6/10) - "Condo" limita
+- **Memorabilità:** 🟢 Alta (8/10)
+- **Dominio:** Media disponibilità (controllare Condeco Ltd UK - conference rooms)
+- **Score totale:** 7.1/10
+- **Rischio:** Condeco.com esiste (conference room booking) - possibile confusione
+
+---
+
+### 17. **Assemblea** (o AssembleaAI)
+
+#### Razionale Strategico
+- **Core business amministratori:** Le assemblee sono il momento cruciale
+- **Termine nativo:** Tutti lo conoscono, zero spiegazioni
+- **One-word brand:** Forte, chiaro, memorabile
+- **Positioning:** Semplifichiamo le assemblee (comunicazione, votazioni, verbali)
+
+#### Punti Chiave
+- **Target fit:** 🟢 Eccellente (9/10) - Risonanza immediata
+- **Professionalità:** 🟢 Alta (8/10)
+- **Scalabilità:** 🔴 Bassa (4/10) - Locked su condomini/assemblee
+- **Memorabilità:** 🟢 Altissima (9/10)
+- **Dominio:** Rischio conflitti altissimo (parola comune)
+- **Score totale:** 7.1/10
+- **Nota:** Potrebbe limitare percezione (solo assemblee, non gestione quotidiana)
+
+---
+
+### 18. **Vici** (pronuncia: Vi-chi, latino "vicini")
+
+#### Razionale Strategico
+- **"Vicini" in latino:** Riferimento ai condòmini (vicinato)
+- **Breve, punchy:** 2 sillabe, modern tech brand style
+- **Doppio significato:** "Vici" = "ho vinto" (connotazione positiva)
+- **Differentiation:** Unico, nessun competitor usa metafora "vicinato"
+
+#### Punti Chiave
+- **Target fit:** 🟡 Medio (6/10) - Significato non immediatamente ovvio
+- **Professionalità:** 🟡 Media (7/10) - Suono moderno ma forse troppo minimal
+- **Scalabilità:** 🟢 Alta (8/10) - Abstract, applicabile a community/social
+- **Memorabilità:** 🟢 Alta (8/10) - Breve, distinctive
+- **Dominio:** Buona disponibilità
+- **Score totale:** 7.0/10
+
+---
+
+### 19. **Condify**
+
+#### Razionale Strategico
+- **"Condo" + suffix "-ify" (rendere, trasformare):** Digitalizziamo i condomini
+- **Tech naming pattern:** Spotify, Shopify → riconoscibile per investitori
+- **Active voice:** Implica azione, trasformazione
+- **Positioning:** Trasformiamo la gestione condominiale
+
+#### Punti Chiave
+- **Target fit:** 🟡 Medio (6/10) - "-ify" forse troppo startup-y
+- **Professionalità:** 🟡 Media (6/10) - Rischio sembrare consumer app
+- **Scalabilità:** 🟡 Media (7/10) - "Condo" limita
+- **Memorabilità:** 🟢 Alta (8/10) - Pattern familiare
+- **Dominio:** Media disponibilità
+- **Score totale:** 6.5/10
+
+---
+
+### 20. **Gestio**
+
+#### Razionale Strategico
+- **Latino "gestio" (gestire):** Essenza del lavoro amministratore
+- **Suono corporate italiano:** Finale in "-io" (Enel, Eni, Generali style)
+- **One-word, abstract:** Flessibile per espansione
+- **Positioning:** La piattaforma di gestione professionale
+
+#### Punti Chiave
+- **Target fit:** 🟢 Buono (7/10) - Suono familiare
+- **Professionalità:** 🟢 Alta (8/10) - Corporate, solido
+- **Scalabilità:** 🟢 Altissima (9/10) - "Gestio" applicabile a qualsiasi gestionale
+- **Memorabilità:** 🟡 Media (6/10) - Generico, rischio confusione
+- **Dominio:** Rischio conflitti (parola radice comune)
+- **Score totale:** 7.3/10
+
+---
+
+## Tabella Comparativa Completa (20 Nomi)
+
+| # | Nome | Target Fit | Professionalità | Scalabilità | Memorabilità | Score Totale | Rank |
+|---|------|------------|-----------------|-------------|--------------|--------------|------|
+| 14 | **Quorum** | 9/10 | 9/10 | 7/10 | 8/10 | **8.0** | 🥇 1° |
+| 1 | **CondoAssist** | 10/10 | 9/10 | 6/10 | 8/10 | **8.2** | 🥇 1° |
+| 8 | **CondoWise** | 8/10 | 8/10 | 6/10 | 8/10 | **7.8** | 🥈 2° |
+| 6 | **CasaHub** | 8/10 | 7/10 | 8/10 | 8/10 | **7.6** | 🥈 2° |
+| 15 | **AbitaIQ** | 7/10 | 8/10 | 8/10 | 8/10 | **7.5** | 🥈 2° |
+| 2 | **Portinai** | 10/10 | 7/10 | 3/10 | 10/10 | **7.4** | 🥉 3° |
+| 7 | **SindacoAI** | 9/10 | 9/10 | 4/10 | 7/10 | **7.3** | 🥉 3° |
+| 20 | **Gestio** | 7/10 | 8/10 | 9/10 | 6/10 | **7.3** | 🥉 3° |
+| 13 | **Edifico** | 7/10 | 8/10 | 6/10 | 8/10 | **7.2** | 4° |
+| 3 | **Adminio** | 6/10 | 9/10 | 10/10 | 7/10 | **7.1** | 4° |
+| 16 | **Condeco** | 7/10 | 8/10 | 6/10 | 8/10 | **7.1** | 4° |
+| 17 | **Assemblea** | 9/10 | 8/10 | 4/10 | 9/10 | **7.1** | 4° |
+| 11 | **Palazzo** | 8/10 | 8/10 | 4/10 | 9/10 | **7.0** | 5° |
+| 18 | **Vici** | 6/10 | 7/10 | 8/10 | 8/10 | **7.0** | 5° |
+| 9 | **Habita** | 6/10 | 9/10 | 9/10 | 6/10 | **6.9** | 5° |
+| 4 | **Condora** | 7/10 | 9/10 | 8/10 | 6/10 | **6.8** | 6° |
+| 10 | **CondoMate** | 7/10 | 6/10 | 7/10 | 8/10 | **6.8** | 6° |
+| 12 | **Conduit** | 6/10 | 8/10 | 8/10 | 6/10 | **6.7** | 6° |
+| 19 | **Condify** | 6/10 | 6/10 | 7/10 | 8/10 | **6.5** | 7° |
+| 5 | **CondomìNO** | 5/10 | 4/10 | 3/10 | 10/10 | **5.3** | 8° |
+
+---
+
+## Analisi Top 5 (Finale)
+
+### 🏆 TOP TIER (8.0-8.2)
+
+**1. CondoAssist (8.2)** - ORIGINALE RACCOMANDATO
+- **Strengths:** Target fit perfetto, chiarezza immediata, bilanciamento ideale
+- **Weakness:** Scalabilità media (locked su "Condo")
+- **Best for:** Launch veloce, adoption massima, GTM semplificato
+
+**2. Quorum (8.0)** - NUOVO STRONG CONTENDER ⭐
+- **Strengths:** Risonanza professionale altissima, one-word power, significato profondo
+- **Weakness:** Dominio potenzialmente occupato, rischio trademark
+- **Best for:** Positioning premium, credibilità istituzionale, storytelling forte
+- **Differentiator:** Unico che parla al "pain point assemblee" direttamente
+
+### 🥈 SECOND TIER (7.5-7.8)
+
+**3. CondoWise (7.8)**
+- **Strengths:** Tono rassicurante perfetto per target, memorabile
+- **Best for:** Se vuoi "expertise consultant" positioning vs "efficiency tool"
+
+**4. CasaHub (7.6)**
+- **Strengths:** Caldo, familiare, scala bene verso PropTech generale
+- **Best for:** Se priorità è warmth + scalabilità internazionale
+
+**5. AbitaIQ (7.5)**
+- **Strengths:** Pattern B2B SaaS riconoscibile, IQ suffix scalabile
+- **Best for:** Se target include amministratori under 40 (più tech-savvy)
+
+---
+
+## Raccomandazione Finale AGGIORNATA
+
+### Scenario A: **Launch Rapido + Adoption Massima**
+➡️ **Scegli: CondoAssist**
+- Nessun rischio, massima chiarezza, esecuzione GTM semplice
+- Dominio probabilmente disponibile
+- Funziona da subito senza education
+
+### Scenario B: **Premium Positioning + Storytelling Forte**
+➡️ **Scegli: Quorum** ⭐ NUOVO
+- One-word brand memorabile
+- Risonanza emotiva/professionale altissima con amministratori
+- Storytelling: "Quorum è dove le decisioni condominiali diventano semplici"
+- Rischio: verifica disponibilità dominio SUBITO
+
+**Positioning Quorum:**
+> "Quorum è la piattaforma intelligente che porta le assemblee condominiali nell'era digitale: comunicazione centralizzata, decisioni rapide, consenso facilitato."
+
+**Tagline Quorum:**
+- "Il consenso, semplificato"
+- "Dove le decisioni condominiali prendono forma"
+- "Raggiungi il quorum, sempre"
+
+### Scenario C: **Scalabilità Massima (Fundraising Focus)**
+➡️ **Scegli: Gestio o Adminio**
+- Massima flessibilità per pivot/espansione
+- Attrattivi per investor (TAM espandibile oltre condomini)
 
 ---
 
