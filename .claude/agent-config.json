@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "project": "condoai",
+  "project": "studioagent",
   "caching": {
     "enabled": true,
     "strategy": "git-based",

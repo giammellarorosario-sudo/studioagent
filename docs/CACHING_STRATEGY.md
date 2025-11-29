@@ -1,4 +1,4 @@
-# Strategia di Caching per CondoAI
+# Strategia di Caching per StudioAgent
 
 ## Overview
 Ottimizzazione context caching per sviluppo efficiente con Claude Code e agenti AI.

@@ -1,4 +1,4 @@
-# CondoAI
+# StudioAgent
 
 **AI Suite per Amministratori di Condominio - Italia**
 
@@ -24,7 +24,7 @@ Gli amministratori di condominio perdono 5+ ore al giorno rispondendo alle stess
 ## 🏗️ Struttura Progetto
 
 ```
-condoai/
+studioagent/
 ├── 01-strategy/          # Strategia business, brand, GTM
 │   ├── brand/
 │   ├── business/

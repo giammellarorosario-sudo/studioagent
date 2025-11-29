@@ -1,4 +1,4 @@
-# Analisi Naming - CondoAI Suite
+# Analisi Naming - StudioAgent Suite
 
 **Data creazione:** 2025-11-29
 **Versione:** 2.0 - Espansa con 15 nomi aggiuntivi
