@@ -13,9 +13,8 @@ cd "C:\Users\giamm\condo ai"
 git push origin master
 ```
 
-### 2. Rename su GitHub (2 minuti)
-- Vai su: github.com/giammellarorosario-sudo/condoai
-- Settings → Rename → **studioagent**
+### 2. Rename su GitHub ✅ Completato
+- Repository GitHub: github.com/giammellarorosario-sudo/studioagent
 
 ### 3. Aggiorna remote (10 secondi)
 ```bash
