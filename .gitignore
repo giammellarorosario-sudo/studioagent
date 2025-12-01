@@ -63,3 +63,10 @@ Thumbs.db
 *.key
 credentials.json
 secrets.yaml
+
+# Excel Contabilità (dati finanziari sensibili - MAI committare)
+accounting-*.xlsx
+accounting-*.xls
+~$*.xlsx
+~$*.xls
+*.xlsm
