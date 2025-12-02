@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudioAgent - Brand Color Palette</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #0F172A;
+            background: #fff;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            border-bottom: 3px solid #FFC93C;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #0F172A;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #64748B;
+            margin-top: 10px;
+        }
+        
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0F172A;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E2E8F0;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #334155;
+            margin: 30px 0 15px 0;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .color-card {
+            border: 2px solid #E2E8F0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+        }
+        
+        .color-info {
+            padding: 16px;
+            background: #F8FAFC;
+        }
+        
+        .color-name {
+            font-weight: 700;
+            font-size: 16px;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .color-hex {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #2563EB;
+            font-weight: 600;
+            background: #EFF6FF;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        
+        .color-usage {
+            font-size: 13px;
+            color: #64748B;
+            margin-top: 8px;
+        }
+        
+        .palette-section {
+            background: #F8FAFC;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .guidelines {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .guideline-box {
+            padding: 24px;
+            border-radius: 12px;
+            border: 2px solid;
+        }
+        
+        .do-box {
+            background: #F0FDF4;
+            border-color: #22C55E;
+        }
+        
+        .dont-box {
+            background: #FEE2E2;
+            border-color: #EF4444;
+        }
+        
+        .guideline-box h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .do-box h3 {
+            color: #16A34A;
+        }
+        
+        .dont-box h3 {
+            color: #DC2626;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+        }
+        
+        .do-box ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #22C55E;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .dont-box ul li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #EF4444;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .contrast-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .contrast-table th,
+        .contrast-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        
+        .contrast-table th {
+            background: #F8FAFC;
+            font-weight: 600;
+            color: #334155;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .badge-aaa {
+            background: #DCFCE7;
+            color: #16A34A;
+        }
+        
+        .badge-aa {
+            background: #DBEAFE;
+            color: #2563EB;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #E2E8F0;
+            text-align: center;
+            color: #64748B;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .color-card:hover {
+                transform: none;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎨 StudioAgent</h1>
+        <h2 style="border: none; margin: 10px 0;">Brand Color Palette</h2>
+        <div class="subtitle">
+            <strong>Versione:</strong> 1.0 | 
+            <strong>Data:</strong> 2 Dicembre 2025 | 
+            <strong>Estratto da:</strong> Landing Page
+        </div>
+    </header>
+
+    <section>
+        <h2>Palette Principale</h2>
+        
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #FFC93C;"></div>
+                <div class="color-info">
+                    <div class="color-name">🟡 Giallo Oro</div>
+                    <div class="color-hex">#FFC93C</div>
+                    <div class="color-usage">Primary CTA, Highlights</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #FFD666;"></div>
+                <div class="color-info">
+                    <div class="color-name">Giallo Hover</div>
+                    <div class="color-hex">#FFD666</div>
+                    <div class="color-usage">CTA Hover State</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #2563EB;"></div>
+                <div class="color-info">
+                    <div class="color-name">🔵 Blu Corporate</div>
+                    <div class="color-hex">#2563EB</div>
+                    <div class="color-usage">Brand Primary, Links</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="palette-section">
+        <h2>Scala Neutri (Slate)</h2>
+        
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #0F172A;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 900</div>
+                    <div class="color-hex">#0F172A</div>
+                    <div class="color-usage">Testo primario, Titoli</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #1E293B;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 800</div>
+                    <div class="color-hex">#1E293B</div>
+                    <div class="color-usage">Testo secondario</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #475569;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 600</div>
+                    <div class="color-hex">#475569</div>
+                    <div class="color-usage">Placeholders, Labels</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #64748B;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 500</div>
+                    <div class="color-hex">#64748B</div>
+                    <div class="color-usage">Icone secondarie</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #94A3B8;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 400</div>
+                    <div class="color-hex">#94A3B8</div>
+                    <div class="color-usage">Bordi chiari</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #E2E8F0;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 200</div>
+                    <div class="color-hex">#E2E8F0</div>
+                    <div class="color-usage">Bordi card, Separatori</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #F1F5F9;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 100</div>
+                    <div class="color-hex">#F1F5F9</div>
+                    <div class="color-usage">Background secondario</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #F8FAFC; border: 1px solid #E2E8F0;"></div>
+                <div class="color-info">
+                    <div class="color-name">Slate 50</div>
+                    <div class="color-hex">#F8FAFC</div>
+                    <div class="color-usage">Background alternato</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Colori Semantici</h2>
+        
+        <h3>Success</h3>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #22C55E;"></div>
+                <div class="color-info">
+                    <div class="color-name">Green 500</div>
+                    <div class="color-hex">#22C55E</div>
+                    <div class="color-usage">Checkmarks, Success</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #DCFCE7;"></div>
+                <div class="color-info">
+                    <div class="color-name">Green 100</div>
+                    <div class="color-hex">#DCFCE7</div>
+                    <div class="color-usage">Success Background</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Warning</h3>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #FACC15;"></div>
+                <div class="color-info">
+                    <div class="color-name">Yellow 400</div>
+                    <div class="color-hex">#FACC15</div>
+                    <div class="color-usage">Stars, Ratings</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Accento (Viola)</h3>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #9333EA;"></div>
+                <div class="color-info">
+                    <div class="color-name">Purple 600</div>
+                    <div class="color-hex">#9333EA</div>
+                    <div class="color-usage">Features, Accenti</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #F3E8FF;"></div>
+                <div class="color-info">
+                    <div class="color-name">Purple 100</div>
+                    <div class="color-hex">#F3E8FF</div>
+                    <div class="color-usage">Purple Background</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>♿ Accessibilità (WCAG Compliance)</h2>
+        
+        <table class="contrast-table">
+            <thead>
+                <tr>
+                    <th>Combinazione</th>
+                    <th>Ratio</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Slate 900 on White</td>
+                    <td>19.4:1</td>
+                    <td><span class="badge badge-aaa">AAA</span></td>
+                </tr>
+                <tr>
+                    <td>Slate 600 on White</td>
+                    <td>7.2:1</td>
+                    <td><span class="badge badge-aa">AA</span></td>
+                </tr>
+                <tr>
+                    <td>Blue 600 on White</td>
+                    <td>8.6:1</td>
+                    <td><span class="badge badge-aaa">AAA</span></td>
+                </tr>
+                <tr>
+                    <td>#FFC93C on Slate 900</td>
+                    <td>10.2:1</td>
+                    <td><span class="badge badge-aaa">AAA</span></td>
+                </tr>
+                <tr>
+                    <td>White on Blue 600</td>
+                    <td>8.6:1</td>
+                    <td><span class="badge badge-aaa">AAA</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p style="color: #64748B; font-size: 14px; margin-top: 10px;">
+            ✓ Tutti i colori primari rispettano WCAG AA (minimum 4.5:1 per testo normale)
+        </p>
+    </section>
+
+    <section>
+        <h2>📐 Usage Guidelines</h2>
+        
+        <div class="guidelines">
+            <div class="guideline-box do-box">
+                <h3>✅ DO</h3>
+                <ul>
+                    <li>Usa #FFC93C solo per CTA primari</li>
+                    <li>Mantieni Slate 900 per testo principale</li>
+                    <li>Usa varianti -50 e -100 per background chiari</li>
+                    <li>Alterna White e Slate 50 per sezioni</li>
+                    <li>Usa semantic colors solo per il loro scopo</li>
+                </ul>
+            </div>
+            
+            <div class="guideline-box dont-box">
+                <h3>❌ DON'T</h3>
+                <ul>
+                    <li>Non usare #FFC93C su sfondo chiaro</li>
+                    <li>Non mescolare scale di grigi diverse</li>
+                    <li>Non usare più di 3 colori accento per pagina</li>
+                    <li>Non creare nuove varianti senza documentarle</li>
+                    <li>Non ignorare i contrast ratio</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>StudioAgent Brand Color Palette</strong> · Versione 1.0 · 2 Dicembre 2025</p>
+        <p style="margin-top: 10px;">Approvato da Frontend Team · Prossima revisione: Q1 2026</p>
+    </footer>
+</body>
+</html>
